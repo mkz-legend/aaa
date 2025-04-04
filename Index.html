@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Information</title>
+    <style>
+        body {
+            background: url('dmitry-novikov-49gi04Retc4-unsplash.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .overlay {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            width: 60%;
+            margin: 50px auto;
+            border-radius: 10px;
+        }
+        .car {
+            margin: 20px 0;
+            padding: 10px;
+            border-bottom: 1px solid white;
+        }
+        h1 {
+            padding-top: 20px;
+        }
+        .car img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .car a {
+            display: block;
+            margin-top: 10px;
+            padding: 10px;
+            background: #ffcc00;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <h1>Car Information</h1>
+        <div class="car">
+            <h2>Tesla Model S</h2>
+            <img src="file:///F:/dmitry-novikov-49gi04Retc4-unsplash.jpg" alt="Tesla Model S">
+            <p>Electric car with high performance and autopilot capabilities.</p>
+            <a href="blank_index.html">Tesla Model 3 Info</a>
+        </div>
+        <div class="car">
+            <h2>Ford Mustang</h2>
+            <img src="file:///F:/yehor-tulinov-RGANMXoA83g-unsplash.jpg" alt="Ford Mustang">
+            <p>Iconic American muscle car with a powerful V8 engine.</p>
+            <a href="another_blank_page.html">Ford Mustang Info</a>
+        </div>
+        <div class="car">
+            <h2>Lamborghini Aventador</h2>
+            <img src="file:///F:/krish-parmar-I70_S2OkWM4-unsplash.jpg" alt="Lamborghini Aventador">
+            <p>Luxury sports car with a V12 engine and an aggressive design.</p>
+            <a href="another_blank_page_2.html">Lamborghini Aventador Info</a>
+        </div>
+        <div class="car">
+            <h2>BMW M3</h2>
+            <img src="file:///F:/serjan-midili-o-h1NulTMWc-unsplash.jpg" alt="BMW M3">
+            <p>Sporty sedan known for its handling and performance.</p>
+            <a href="another_blank_page_3.html">BMW M3 Info</a>
+        </div>
+        <a href="#" id="shareButton">Share This Page</a>
+    </div>
+    <script>
+        document.getElementById("shareButton").addEventListener("click", function() {
+            const shareUrl = window.location.href;
+            navigator.clipboard.writeText(shareUrl).then(() => {
+                alert("Link copied! Share it with your friends.");
+            });
+        });
+    </script>
+</body>
+</html>
